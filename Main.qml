@@ -5,7 +5,6 @@ ApplicationWindow {
     visible: true
     height: 667
     width: 375
-    color: "grey"
 
     StackView {
         id: stackPage
@@ -31,18 +30,9 @@ ApplicationWindow {
         }
         initialItem: StartMenu {
             onStartClick: type => {
-                              let currItem = stackPage.push("./TicTacToe.qml", {
-                                                                "isAgainstCPU": type === "CPU"
-                                                            })
-                              //                              currItem.reset.connect(isReset => {
-                              //                                                         stackPage.pop()
-                              //                                                         if (isReset)
-                              //                                                         stackPage.push(
-                              //                                                             "./TicTacToe.qml",
-                              //                                                             {
-                              //                                                                 "isAgainstCPU": type === "CPU"
-                              //                                                             })
-                              //                                                     })
+                              stackPage.push("./TicTacToe.qml", {
+                                                 "isAgainstCPU": type === "CPU"
+                                             })
                           }
         }
     }

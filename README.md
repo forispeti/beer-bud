@@ -1,1 +1,1 @@
-# beer-bud
+#tictactoe implementation in Qt by Foris Peter

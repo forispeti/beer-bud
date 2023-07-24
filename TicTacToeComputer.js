@@ -3,7 +3,6 @@ var aiPlayer = "X"
 
 var origBoard = [0, 1, 2, 3, 4, 5, 6, 7, 8]
 
-//var bestSpot = minimax(origBoard, aiPlayer)
 function minimax(newBoard, player) {
 
     //available spots

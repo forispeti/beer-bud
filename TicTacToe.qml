@@ -36,7 +36,6 @@ Item {
                 Repeater {
                     model: 9
                     Rectangle {
-                        id: cubes
                         width: 89
                         height: 89
                         border.width: 1
@@ -47,7 +46,6 @@ Item {
                                 enabled = false
                                 if (playingField[index] !== Logic.aiPlayer
                                         && playingField[index] !== Logic.huPlayer) {
-                                    text.visible = false
                                     playingField[index]
                                             = isPlayer1 ? Logic.huPlayer : Logic.aiPlayer
                                     if (isAgainstCPU) {
